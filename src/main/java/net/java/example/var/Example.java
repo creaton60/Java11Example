@@ -17,7 +17,7 @@ public class Example {
 
         var list = new ArrayList<String>();
 
-        var path = Paths.get("/Users/reactor/IdeaProjects/Java11/src/net/test/var/cancer_rate_2014_2.csv");
+        var path = Paths.get("net/java/example/var/cancer_rate_2014_2.csv");
 
         System.out.println(path.getFileName());
 
