@@ -7,6 +7,7 @@ version '1.0.0'
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
@@ -21,5 +22,12 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
     compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
+
+    compile 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    runtimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+
+    // Only necessary for JUnit 3 and 4 tests
+    compile 'junit:junit:4.12'
+    runtimeOnly 'org.junit.vintage:junit-vintage-engine:5.3.1'
 
 }
